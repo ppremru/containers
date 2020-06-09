@@ -1,6 +1,2 @@
 # tssc-agent-maven
-Jenkin's slave with maven...
-
-## Iteration 1
-Brute force ... 
-
+TODO:  Jenkin with maven
