@@ -26,7 +26,6 @@ RUN INSTALL_PKGS=" \
     yum -y --setopt=tsflags=nodocs $DISABLE_REPOS install $INSTALL_PKGS && \
     rpm -V $INSTALL_PKGS && \
     yum -y clean all --enablerepo='*' && \
-    yum install java-1.8.0-openjdk && \
     source scl_source enable rh-python36 && \
     scl enable rh-python36 bash && \
     python3 -m pip install --upgrade pip && \
