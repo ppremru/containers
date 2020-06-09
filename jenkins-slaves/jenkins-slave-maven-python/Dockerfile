@@ -14,6 +14,7 @@ ADD ubi.repo /etc/yum.repos.d/ubi.repo
 
 
 
+#try3 mindless change to a comment
 #yum install java-1.8.0-openjdk && \
 #yum install maven && \
 RUN INSTALL_PKGS=" \
