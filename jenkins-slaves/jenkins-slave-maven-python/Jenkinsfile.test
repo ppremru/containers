@@ -1,6 +1,6 @@
 pipeline {
     agent {
-      label 'jenkins-slave-python'
+      label 'jenkins-slave-maven-python'
     }
 
     stages {
