@@ -12,7 +12,7 @@ ENV PYTHON_VERSION=3.6 \
 
 ADD ubi.repo /etc/yum.repos.d/ubi.repo
 
-
+# Hello world
 
 # TODO:
 #yum install java-1.8.0-openjdk && \
