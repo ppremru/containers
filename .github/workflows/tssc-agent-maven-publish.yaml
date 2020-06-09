@@ -1,4 +1,4 @@
-name: jenkins-agent-maven-python-publish
+name: tssc-agent-maven-publish
 on:
   push:
     branches:
@@ -6,12 +6,12 @@ on:
     tags:
       - '*'
     paths:
-      - jenkins-slaves/jenkins-slave-maven-python/version.json
+      - tssc-agent-maven-publish/version.json
 jobs:
   build:
     env:
-      context: jenkins-slaves/jenkins-slave-maven-python
-      image_name: jenkins-agent-maven-python
+      context: tssc-agent-maven
+      image_name: tssc-agent-maven
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
