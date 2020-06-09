@@ -13,9 +13,9 @@ ENV PYTHON_VERSION=3.6 \
 ADD ubi.repo /etc/yum.repos.d/ubi.repo
 
 
-#    yum install java-1.8.0-openjdk && \
-#    yum install maven && \
 
+#yum install java-1.8.0-openjdk && \
+#yum install maven && \
 RUN INSTALL_PKGS=" \
       rh-python36 rh-python36-python-devel rh-python36-python-setuptools rh-python36-python-wheel rh-python36-python-pip nss_wrapper \
       httpd24 httpd24-httpd-devel httpd24-mod_ssl httpd24-mod_auth_kerb httpd24-mod_ldap \
