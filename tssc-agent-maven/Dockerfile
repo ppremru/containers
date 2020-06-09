@@ -1,6 +1,5 @@
 FROM registry.access.redhat.com/ubi8/ubi:latest
-RUN yum -y update && \ 
-    yum -y install python3 \
-    yum -y install maven
 
-
+RUN dnf -y update             \ 
+    && dnf -y install python3 \
+    && dnf -y install maven
