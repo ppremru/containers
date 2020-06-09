@@ -14,6 +14,8 @@ ADD ubi.repo /etc/yum.repos.d/ubi.repo
 
 
 
+#yum install java-1.8.0-openjdk && \
+#yum install maven && \
 RUN INSTALL_PKGS=" \
       rh-python36 rh-python36-python-devel rh-python36-python-setuptools rh-python36-python-wheel rh-python36-python-pip nss_wrapper \
       httpd24 httpd24-httpd-devel httpd24-mod_ssl httpd24-mod_auth_kerb httpd24-mod_ldap \
@@ -23,8 +25,6 @@ RUN INSTALL_PKGS=" \
     yum -y --setopt=tsflags=nodocs $DISABLE_REPOS install $INSTALL_PKGS && \
     rpm -V $INSTALL_PKGS && \
     yum -y clean all --enablerepo='*' && \
-    yum install java-1.8.0-openjdk && \
-    yum install maven && \
     source scl_source enable rh-python36 && \
     scl enable rh-python36 bash && \
     python3 -m pip install --upgrade pip && \
