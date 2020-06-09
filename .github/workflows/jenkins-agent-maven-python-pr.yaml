@@ -1,4 +1,3 @@
-# Hello World
 name: jenkins-agent-maven-python-pr
 on:
   pull_request:
