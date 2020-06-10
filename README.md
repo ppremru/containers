@@ -5,7 +5,7 @@ This is an example repository to show/describe how to build a container image an
 ## Code Repository
 
 ### Container Definition
-This repository is setup to build an image (`jenkins-agent-maven-python`) when a PR is made to any contents in the relevant image path (as defined in the GitHub Actions workflow file). 
+This repository is setup to build an image (`tssc-agent-maven`) when a PR is made to any contents in the relevant image path (as defined in the GitHub Actions workflow file). 
 
 ### GitHub Actions Workflow Definition
 
