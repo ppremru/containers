@@ -6,7 +6,7 @@ on:
     tags:
       - '*'
     paths:
-      - tssc-agent-maven-publish/version.json
+      - tssc-agent-maven/version.json
 jobs:
   build:
     env:
