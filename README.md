@@ -23,10 +23,10 @@ The `.github/workflows` directory contains the GitHub actions yaml definition fi
 
 In the repository settings, add the following secrets:
 
- -`REGISTRY_URI`: `quay.io`
- -`REGISTRY_REPOSITORY`:  _Your [quay.io][1] username or organization name_
- -`REGISTRY_USERNAME`:  _Your [quay.io][1] username or organization name (this is likely the same as the repository name)_
- -`REGISTRY_PASSWORD`:  _Your [quay.io][1] password_
+-`REGISTRY_URI`: `quay.io`
+-`REGISTRY_REPOSITORY`:  _Your [quay.io][1] username or organization name_
+-`REGISTRY_USERNAME`:  _Your [quay.io][1] username or organization name (this is likely the same as the repository name)_
+-`REGISTRY_PASSWORD`:  _Your [quay.io][1] password_
 
 ## Image Repository Settings on Quay.io
 
@@ -38,9 +38,9 @@ In [Quay.io][1], create a new repository that has the same value as the `env -> 
 
 Assuming that everything is configured correctly, you should now be able to see GitHub Actions in action for this repository.
 
-`jenkins-agent-maven-python-pr` will begin when any file in the `jenkins-slaves/jenkins-slave-maven-python/` path is modified and committed. This can be on any branch.
+`tssc-agent-maven-pr` will begin when any file in the `tssc-agent-maven` path is modified and committed. This can be on any branch.
 
-`jenkins-agent-maven-python-publish` will begin when the `version.json` file is updated in the `jenkins-slaves/jenkins-slave-maven-python/` path. This will likely only occur during a major/minor version release which is tagged and pushed manually.
+`tssc-agent-maven-publish` will begin when the `version.json` file is updated in the `tssc-agent-maven/` path. This will likely only occur during a major/minor version release which is tagged and pushed manually.
 
 [1]: https://quay.io
 
