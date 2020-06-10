@@ -23,10 +23,10 @@ The `.github/workflows` directory contains the GitHub actions yaml definition fi
 
 In the repository settings, add the following secrets:
 
--`REGISTRY_URI`: `quay.io`
--`REGISTRY_REPOSITORY`:  _Your [quay.io][1] username or organization name_
--`REGISTRY_USERNAME`:  _Your [quay.io][1] username or organization name (this is likely the same as the repository name)_
--`REGISTRY_PASSWORD`:  _Your [quay.io][1] password_
+- `REGISTRY_URI`: `quay.io`
+- `REGISTRY_REPOSITORY`:  _Your [quay.io][1] username or organization name_
+- `REGISTRY_USERNAME`:  _Your [quay.io][1] username or organization name (this is likely the same as the repository name)_
+- `REGISTRY_PASSWORD`:  _Your [quay.io][1] password_
 
 ## Image Repository Settings on Quay.io
 
